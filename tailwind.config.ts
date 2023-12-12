@@ -1,20 +1,46 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-    },
-  },
-  plugins: [],
-}
-export default config
+	mode: "jit",
+	content: [
+		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+	],
+	theme: {
+		extend: {
+			colors: {
+				// Background //
+				primary: "var(--primary)",
+				orange: "var(--orange)",
+				black: "var(--black)",
+				darkgrey: "var(--darkgrey)",
+				grey: "var(--grey)",
+				softgrey: "var(--softgrey)",
+				lightgrey: "var(--lightgrey)",
+				smoke: "var(--smoke)",
+				sand: "var(--sand)",
+
+				// Hover //
+				primaryhover: "var(--primaryhover)",
+			},
+			padding: {
+				// :sm //
+				sectionpxsm: "var(--sectionpxsm)",
+				// :lg //
+				sectionpxlg: "var(--sectionpxlg)",
+			},
+			animation: {
+				marquee: "marquee 30s linear infinite",
+			},
+			keyframes: {
+				marquee: {
+					"0%": { transform: "translateX (0%)" },
+					"100%": { transform: "translateX(-100%)" },
+				},
+			},
+		},
+	},
+	plugins: [],
+};
+export default config;

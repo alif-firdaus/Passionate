@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: var(--outfit);
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	/* Color Palette */
+	--primary: #6b54f4;
+	--orange: #ff7a00;
+	--black: #0e0e0e;
+	--darkgrey: #1b1b1b;
+	--grey: #202020;
+	--softgrey: #2f2f2f;
+	--lightgrey: #a2a2a2;
+	--smoke: #ededed;
+	--sand: #f5f1ee;
+
+	/* Color Hover */
+	--primaryhover: #604bdc;
+
+	/* Padding X */
+	/* Padding X :sm */
+	--sectionpxsm: 28px;
+
+	/* Padding X :lg */
+	--sectionpxlg: 140px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@keyframes marquee {
+	from {
+		transform: translateX(0%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.marquee {
+	animation: marquee 30s linear infinite;
 }

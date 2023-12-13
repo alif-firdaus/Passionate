@@ -115,7 +115,7 @@ export default function ContactForm() {
 							disabled={isSubmitting}
 							className="text-lg text-sand bg-primary pt-[11px] pb-[13px] mt-6 lg:mt-8 rounded-md"
 						>
-							{isSubmitting ? "Wait a sec..." : "Submit"}
+							{isSubmitting ? "Wait a sec..." : "Hit me up"}
 						</button>
 					</form>
 				</div>

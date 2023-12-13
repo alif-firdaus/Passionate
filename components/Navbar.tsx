@@ -142,7 +142,7 @@ function Navbar() {
 					<Link href="/connect">
 						<div className="flex items-center mt-2 justify-center w-full pb-3 pt-[14px] font-medium bg-primary rounded-xl">
 							<p className="text-sand text-center text-base font-normal pb-1">
-								Let&apos;s talk
+								Connect
 							</p>
 						</div>
 					</Link>

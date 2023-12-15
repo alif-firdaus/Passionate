@@ -41,7 +41,7 @@ export default function ContactForm() {
 		<section className="px-sectionpxsm pt-40 lg:pt-72 pb-14 lg:px-sectionpxlg lg:pb-32">
 			<div className="flex flex-col lg:flex-row lg:justify-between lg:gap-32">
 				<div className="flex flex-col lg:justify-center lg:w-full">
-					<p className="text-sm text-lightgrey tracking-wide lg:text-xs">
+					<p className="text-lightgrey tracking-wide text-xs">
 						G E T I N T O U C H
 					</p>
 					<h1 className="text-4xl lg:text-[50px] mt-5 lg:mt-10 leading-none font-medium text-sand">

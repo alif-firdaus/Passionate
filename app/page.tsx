@@ -287,10 +287,10 @@ export default function Home() {
 							priority={true}
 							className="w-full"
 						/>
-						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary">
+						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary lg:hover:bg-black duration-300 cursor-pointer">
 							<h2 className="text-2xl text-sand">Fixit App</h2>
 							<p className="text-sand font-light mt-4 text-lg">
-								API-Powered report generator
+								Connecting people with service providers
 							</p>
 							<div className="text-[#C7C5C3] text-lg mt-[2px] font-light flex gap-3 items-center">
 								<p>UI/UX</p>
@@ -300,7 +300,7 @@ export default function Home() {
 								<p>Mobile App</p>
 							</div>
 							<div className="items-center justify-start mt-6">
-								<Link href="/case-studies/reportify">
+								<Link href="/case-studies/fixit">
 									<div className="flex items-center mt-2 justify-center gap-3 w-fit pb-1 border-b-[0.5px] border-sand font-medium lg:hover:gap-5 duration-300">
 										<p className="text-sand text-center text-lg font-medium">
 											Case Study
@@ -319,7 +319,7 @@ export default function Home() {
 							priority={true}
 							className="w-full"
 						/>
-						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary">
+						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary lg:hover:bg-black duration-300 cursor-pointer">
 							<h2 className="text-2xl text-sand">Reportify</h2>
 							<p className="text-sand font-light mt-4 text-lg">
 								API-Powered report generator
@@ -329,7 +329,7 @@ export default function Home() {
 								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
 								<p>Research</p>
 								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
-								<p>Mobile App</p>
+								<p>SAAS</p>
 							</div>
 							<div className="items-center justify-start mt-6">
 								<Link href="/case-studies/reportify">
@@ -353,10 +353,10 @@ export default function Home() {
 							priority={true}
 							className="w-full"
 						/>
-						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary">
-							<h2 className="text-2xl text-sand">Reportify</h2>
+						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary lg:hover:bg-black duration-300 cursor-pointer">
+							<h2 className="text-2xl text-sand">AQUA Wallet</h2>
 							<p className="text-sand font-light mt-4 text-lg">
-								API-Powered report generator
+								E-wallet to transfer and receive crypto
 							</p>
 							<div className="text-[#C7C5C3] text-lg mt-[2px] font-light flex gap-3 items-center">
 								<p>UI/UX</p>
@@ -366,7 +366,7 @@ export default function Home() {
 								<p>Mobile App</p>
 							</div>
 							<div className="items-center justify-start mt-6">
-								<Link href="/case-studies/reportify">
+								<Link href="/case-studies/aqua-wallet">
 									<div className="flex items-center mt-2 justify-center gap-3 w-fit pb-1 border-b-[0.5px] border-sand font-medium lg:hover:gap-5 duration-300">
 										<p className="text-sand text-center text-lg font-medium">
 											Case Study
@@ -385,20 +385,22 @@ export default function Home() {
 							priority={true}
 							className="w-full"
 						/>
-						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary">
-							<h2 className="text-2xl text-sand">Reportify</h2>
+						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary lg:hover:bg-black duration-300 cursor-pointer">
+							<h2 className="text-2xl text-sand">
+								Ecommerce Builder
+							</h2>
 							<p className="text-sand font-light mt-4 text-lg">
-								API-Powered report generator
+								Enabling businesses to build online store
 							</p>
 							<div className="text-[#C7C5C3] text-lg mt-[2px] font-light flex gap-3 items-center">
+								<p>Planning</p>
+								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
 								<p>UI/UX</p>
 								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
-								<p>Research</p>
-								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
-								<p>Mobile App</p>
+								<p>Website</p>
 							</div>
 							<div className="items-center justify-start mt-6">
-								<Link href="/case-studies/reportify">
+								<Link href="/case-studies/ecommerce-builder">
 									<div className="flex items-center mt-2 justify-center gap-3 w-fit pb-1 border-b-[0.5px] border-sand font-medium lg:hover:gap-5 duration-300">
 										<p className="text-sand text-center text-lg font-medium">
 											Case Study

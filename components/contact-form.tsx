@@ -47,7 +47,7 @@ export default function ContactForm() {
 					<h1 className="text-4xl lg:text-[50px] mt-5 lg:mt-10 leading-none font-medium text-sand">
 						Elevating products into perfection
 					</h1>
-					<p className="text-sand mt-7 text-[17px] lg:text-xl lg:leading-relaxed lg:mt-14 font-light">
+					<p className="text-sand mt-7 text-[17px] lg:text-xl lg:leading-relaxed lg:mt-10 font-light">
 						Connect with me and discuss what&apos;s you been up to,
 						drop me some lines! 👋
 					</p>

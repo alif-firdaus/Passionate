@@ -188,7 +188,7 @@ export default function Home() {
 			<section className="px-sectionpxsm pt-20 pb-28 lg:pb-52 lg:px-sectionpxlg lg:pt-36">
 				<div className="flex flex-col lg:flex-row lg:justify-between">
 					<div className="flex flex-col lg:justify-start lg:w-full">
-						<p className="text-sm text-lightgrey tracking-wide lg:text-xs">
+						<p className="text-lightgrey tracking-wide text-xs">
 							E X P E R T I S E
 						</p>
 						<h1 className="text-[28px] lg:text-4xl mt-6 leading-none font-medium text-sand">
@@ -419,7 +419,7 @@ export default function Home() {
 			<section className="px-sectionpxsm bg-sand pt-20 pb-28 lg:px-sectionpxlg lg:pt-48 lg:pb-52">
 				<div className="flex flex-col lg:flex-row lg:justify-between">
 					<div className="flex flex-col lg:justify-start lg:w-full">
-						<p className="text-sm text-lightgrey tracking-wide lg:text-xs">
+						<p className="text-lightgrey tracking-wide text-xs">
 							W H Y H I R E M E
 						</p>
 						<h1 className="text-[28px] lg:text-4xl mt-6 leading-none font-medium text-black">

@@ -5,16 +5,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 // Import Assets //
-import logo from "@/assets/fixit/logo.png";
-import mockup from "@/assets/fixit/mockup.png";
-import navigation from "@/assets/fixit/navigation.png";
-import homepage from "@/assets/fixit/homepage.png";
-import jobposting1 from "@/assets/fixit/jobposting1.png";
-import jobposting2 from "@/assets/fixit/jobposting2.png";
-import contract1 from "@/assets/fixit/kontrak1.png";
-import contract2 from "@/assets/fixit/kontrak2.png";
-import payment1 from "@/assets/fixit/pembayaran1.png";
-import payment2 from "@/assets/fixit/pembayaran2.png";
+import logo from "@/assets/fixit/fixitlogo.webp";
+import mockup from "@/assets/fixit/mockup.webp";
+import navigation from "@/assets/fixit/navigation.webp";
+import homepage from "@/assets/fixit/Homepage.webp";
+import jobposting1 from "@/assets/fixit/jobposting1.webp";
+import jobposting2 from "@/assets/fixit/jobposting2.webp";
+import contract1 from "@/assets/fixit/contract1.webp";
+import contract2 from "@/assets/fixit/contract2.webp";
+import payment1 from "@/assets/fixit/payment1.webp";
+import payment2 from "@/assets/fixit/payment2.webp";
 
 const Fixit = () => {
 	return (

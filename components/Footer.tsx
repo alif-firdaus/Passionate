@@ -10,7 +10,7 @@ import logowhite from "@/assets/images/logowhite.webp";
 
 const Footer = () => {
 	return (
-		<div className="px-sectionpxsm pt-24 lg:pt-32 lg:pb-6 pb-10 bg-black lg:rounded-2xl lg:px-[112px]">
+		<div className="px-sectionpxsm pt-24 lg:pt-32 pb-10 bg-black lg:rounded-2xl lg:px-[112px]">
 			{/* <-- === Get Started Start === --> */}
 			<div className="flex flex-col">
 				<div className="flex justify-center">

@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 
 // Import Assets //
 import logo from "@/assets/fixit/fixitlogo.webp";
-import mockup from "@/assets/fixit/mockup.webp";
-import navigation from "@/assets/fixit/navigation.webp";
-import homepage from "@/assets/fixit/homepage.webp";
+import mockup from "@/assets/fixit/appmockup.webp";
+import navigation from "@/assets/fixit/navbar.webp";
+import homepage from "@/assets/fixit/home.webp";
 import jobposting1 from "@/assets/fixit/jobposting1.webp";
 import jobposting2 from "@/assets/fixit/jobposting2.webp";
 import contract1 from "@/assets/fixit/contract1.webp";

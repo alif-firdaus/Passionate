@@ -165,7 +165,7 @@ const Fixit = () => {
 						</span>{" "}
 						based on their specific needs, budget, and also desired
 						working-duration. After posting their job, the job
-						becomes visible on Partners' platform.
+						becomes visible on Partners&apos; platform.
 					</p>
 				</div>
 			</section>

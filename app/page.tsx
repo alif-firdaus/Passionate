@@ -19,6 +19,9 @@ import studio from "@/assets/images/studio.webp";
 import tailwind from "@/assets/images/tailwind.webp";
 import miro from "@/assets/images/miro.webp";
 import pic from "@/assets/images/pic.webp";
+import uiux from "@/assets/animations/uiux.gif";
+import planning from "@/assets/animations/planning.gif";
+import front from "@/assets/animations/front.gif";
 import shape from "@/assets/images/shape.webp";
 import fixitapp from "@/assets/images/fixitapp.jpg";
 import reportify from "@/assets/images/reportify.jpg";
@@ -215,10 +218,10 @@ export default function Home() {
 					{/* <-- === Expertise UI/UX Design Start === --> */}
 					<div className="flex flex-col rounded-xl gap-28 bg-darkgrey px-7 pt-10 pb-8">
 						<Image
-							src={shape}
-							alt="UI/UX Design Icon"
+							src={uiux}
+							alt="UI/UX Design"
 							priority={true}
-							className="w-20 h-auto"
+							className="w-[82px] h-auto"
 						/>
 						<div className="flex-flex-col">
 							<h2 className="text-[28px] text-sand">
@@ -236,8 +239,8 @@ export default function Home() {
 					{/* <-- === Expertise Project Planning Start === --> */}
 					<div className="flex flex-col rounded-xl gap-28 bg-darkgrey px-7 pt-10 pb-8">
 						<Image
-							src={shape}
-							alt="Project Planning Icon"
+							src={planning}
+							alt="Project Planning"
 							priority={true}
 							className="w-20 h-auto"
 						/>
@@ -256,8 +259,8 @@ export default function Home() {
 					{/* <-- === Expertise Front-end Dev Start === --> */}
 					<div className="flex flex-col rounded-xl gap-28 bg-darkgrey px-7 pt-10 pb-8">
 						<Image
-							src={shape}
-							alt="Front-end Dev Icon"
+							src={front}
+							alt="Front-end Dev"
 							priority={true}
 							className="w-20 h-auto"
 						/>

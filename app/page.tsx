@@ -7,7 +7,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 // Import HeroIcons //
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import {
+	ArrowUpRightIcon,
+	ArrowDownRightIcon,
+} from "@heroicons/react/24/outline";
 
 // Import Assets //
 import hero from "@/assets/images/hero.webp";
@@ -431,13 +434,18 @@ export default function Home() {
 					</div>
 					{/* <-- === Download CV Button Start === --> */}
 					<div className="justify-start flex items-center mt-12 lg:mt-0 lg:self-end lg:justify-end lg:w-full">
-						<Link href="/case-studies">
-							<div className="flex items-center justify-center gap-4 w-fit px-6 pt-[11px] lg:gap-3 lg:px-8 lg:hover:gap-5 duration-300 lg:rounded-full pb-[13px] font-medium bg-darkgrey rounded-xl">
+						<Link
+							href="/aliffirdaus-resume.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							download="ALIF FIRDAUS - RESUME"
+						>
+							<button className="flex items-center justify-center gap-4 w-fit px-6 pt-[11px] lg:gap-3 lg:px-8 lg:hover:gap-5 duration-300 lg:rounded-full pb-[13px] font-medium bg-darkgrey rounded-xl">
 								<p className="text-sand text-center text-lg font-light">
 									Download my CV
 								</p>
-								<ArrowUpRightIcon className="text-lightgrey w-4" />
-							</div>
+								<ArrowDownRightIcon className="text-lightgrey w-4" />
+							</button>
 						</Link>
 					</div>
 					{/* <-- === Download CV Button End === --> */}

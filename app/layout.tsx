@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
-import Providers from "./providers";
-
 const mainfont = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

@@ -288,38 +288,6 @@ export default function Home() {
 				<div className="flex flex-col lg:flex-row lg:gap-7">
 					<div className="flex flex-col">
 						<Image
-							src={fixitapp}
-							alt="Fixit Mobile App Mockup"
-							priority={true}
-							className="w-full"
-						/>
-						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary lg:hover:bg-black duration-300 cursor-pointer">
-							<h2 className="text-2xl text-sand">Fixit App</h2>
-							<p className="text-sand font-light mt-4 text-lg">
-								Connecting people with service providers
-							</p>
-							<div className="text-[#C7C5C3] text-lg mt-[2px] font-light flex gap-3 items-center">
-								<p>UI/UX</p>
-								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
-								<p>Research</p>
-								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
-								<p>Mobile App</p>
-							</div>
-							<div className="items-center justify-start mt-6">
-								<Link href="/case-studies/fixit">
-									<div className="flex items-center mt-2 justify-center gap-3 w-fit pb-1 border-b-[0.5px] border-sand font-medium lg:hover:gap-5 duration-300">
-										<p className="text-sand text-center text-lg font-medium">
-											Case Study
-										</p>
-										<ArrowUpRightIcon className="text-sand w-4" />
-									</div>
-								</Link>
-							</div>
-						</div>
-					</div>
-
-					<div className="flex flex-col mt-6 lg:mt-0">
-						<Image
 							src={reportify}
 							alt="Reportify Mockup"
 							priority={true}
@@ -339,6 +307,38 @@ export default function Home() {
 							</div>
 							<div className="items-center justify-start mt-6">
 								<Link href="/case-studies/reportify">
+									<div className="flex items-center mt-2 justify-center gap-3 w-fit pb-1 border-b-[0.5px] border-sand font-medium lg:hover:gap-5 duration-300">
+										<p className="text-sand text-center text-lg font-medium">
+											Case Study
+										</p>
+										<ArrowUpRightIcon className="text-sand w-4" />
+									</div>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="flex flex-col mt-6 lg:mt-0">
+						<Image
+							src={fixitapp}
+							alt="Fixit Mobile App Mockup"
+							priority={true}
+							className="w-full"
+						/>
+						<div className="w-full flex flex-col px-7 pt-6 pb-8 bg-primary lg:hover:bg-black duration-300 cursor-pointer">
+							<h2 className="text-2xl text-sand">Fixit App</h2>
+							<p className="text-sand font-light mt-4 text-lg">
+								Connecting people with service providers
+							</p>
+							<div className="text-[#C7C5C3] text-lg mt-[2px] font-light flex gap-3 items-center">
+								<p>UI/UX</p>
+								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
+								<p>Research</p>
+								<div className="h-1 w-1 rounded-full bg-lightgrey"></div>
+								<p>Mobile App</p>
+							</div>
+							<div className="items-center justify-start mt-6">
+								<Link href="/case-studies/fixit">
 									<div className="flex items-center mt-2 justify-center gap-3 w-fit pb-1 border-b-[0.5px] border-sand font-medium lg:hover:gap-5 duration-300">
 										<p className="text-sand text-center text-lg font-medium">
 											Case Study

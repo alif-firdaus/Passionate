@@ -2,27 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: var(--outfit);
-}
-
 :root {
 	/* Color Palette */
-	--primary: #6b54f4;
-	--orange: #ff7a00;
-	--black: #0e0e0e;
-	--darkgrey: #1b1b1b;
-	--grey: #202020;
-	--softgrey: #2f2f2f;
-	--lightgrey: #a2a2a2;
-	--smoke: #ededed;
+	--primary: #a3ec46;
 	--sand: #f5f1ee;
-
-	/* Color Hover */
-	--primaryhover: #604bdc;
+	--lightgrey: #b3b3b3;
+	--softgrey: #404040;
+	--grey: #3e3e3e;
+	--darkgrey: #272727;
+	--bgbase: #0a0a0a;
 
 	/* Padding X */
 	/* Padding X :sm */
@@ -30,17 +18,4 @@
 
 	/* Padding X :lg */
 	--sectionpxlg: 140px;
-}
-
-@keyframes marquee {
-	from {
-		transform: translateX(0%);
-	}
-	to {
-		transform: translateX(-100%);
-	}
-}
-
-.marquee {
-	animation: marquee 30s linear infinite;
 }

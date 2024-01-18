@@ -14,8 +14,8 @@
 
 	/* Padding X */
 	/* Padding X :sm */
-	--sectionpxsm: 30px;
+	--sectionpxsm: 24px;
 
 	/* Padding X :lg */
-	--sectionpxlg: 140px;
+	--sectionpxlg: 120px;
 }

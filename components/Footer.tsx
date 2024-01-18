@@ -39,7 +39,7 @@ const Footer = () => {
 							className="w-[150px] h-auto"
 						/>
 					</Link>
-					<p className="text-sand mt-3 lg:mt-5 text-base font-light">
+					<p className="text-lightgrey mt-3 lg:mt-5 text-base font-light">
 						Crafting pixels to make dreams come true
 					</p>
 				</div>
@@ -50,17 +50,17 @@ const Footer = () => {
 					<h2 className="text-sand text-xl font-medium">Navigate</h2>
 					<div className="flex flex-col mt-5 gap-3">
 						<Link href="/">
-							<p className="text-sand text-base font-light lg:hover:text-primary duration-300">
+							<p className="text-lightgrey text-base font-light lg:hover:text-sand duration-300">
 								Home
 							</p>
 						</Link>
 						<Link href="/expertise">
-							<p className="text-sand text-base font-light lg:hover:text-primary duration-300">
+							<p className="text-lightgrey text-base font-light lg:hover:text-sand duration-300">
 								Expertise
 							</p>
 						</Link>
 						<Link href="/case-studies">
-							<p className="text-sand text-base font-light lg:hover:text-primary duration-300">
+							<p className="text-lightgrey text-base font-light lg:hover:text-sand duration-300">
 								Case Studies
 							</p>
 						</Link>
@@ -69,7 +69,7 @@ const Footer = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<p className="text-sand text-base font-light lg:hover:text-primary duration-300">
+							<p className="text-lightgrey text-base font-light lg:hover:text-sand duration-300">
 								Portfolio
 							</p>
 						</Link>
@@ -81,13 +81,13 @@ const Footer = () => {
 				<div className="flex flex-col mt-14 lg:mt-0">
 					<h2 className="text-sand text-xl font-medium">Connect</h2>
 					<div className="flex flex-col mt-5 gap-3">
-						<p className="text-sand text-base font-light">
+						<p className="text-lightgrey text-base font-light">
 							+62 813-3666-4586
 						</p>
-						<p className="text-sand text-base font-light">
+						<p className="text-lightgrey text-base font-light">
 							www.aliffirdaus.com
 						</p>
-						<p className="text-sand text-base font-light">
+						<p className="text-lightgrey text-base font-light">
 							aliffirdaus@petaniweb.com
 						</p>
 					</div>
@@ -106,11 +106,11 @@ const Footer = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<div className="flex items-center gap-2 lg:hover:gap-4 duration-300">
+						<div className="flex items-center gap-2 group">
 							<p className="text-sand text-base font-light">
 								Linkedin
 							</p>
-							<ArrowUpRightIcon className="w-[14px] text-lightgrey" />
+							<ArrowUpRightIcon className="w-[14px] text-lightgrey lg:group-hover:text-sand duration-300" />
 						</div>
 					</Link>
 					{/* <-- = Linkedin End = --> */}
@@ -121,11 +121,11 @@ const Footer = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<div className="flex items-center gap-2 lg:hover:gap-4 duration-300">
+						<div className="flex items-center gap-2 group">
 							<p className="text-sand text-base font-light">
 								Dribbble
 							</p>
-							<ArrowUpRightIcon className="w-[14px] text-lightgrey" />
+							<ArrowUpRightIcon className="w-[14px] text-lightgrey lg:group-hover:text-sand duration-300" />
 						</div>
 					</Link>
 					{/* <-- = Dribbble End = --> */}
@@ -136,11 +136,11 @@ const Footer = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<div className="flex items-center gap-2 lg:hover:gap-4 duration-300">
+						<div className="flex items-center gap-2 group">
 							<p className="text-sand text-base font-light">
 								Github
 							</p>
-							<ArrowUpRightIcon className="w-[14px] text-lightgrey" />
+							<ArrowUpRightIcon className="w-[14px] text-lightgrey lg:group-hover:text-sand duration-300" />
 						</div>
 					</Link>
 					{/* <-- = Github End = --> */}

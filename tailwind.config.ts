@@ -12,32 +12,18 @@ const config: Config = {
 			colors: {
 				// Background //
 				primary: "var(--primary)",
-				orange: "var(--orange)",
-				black: "var(--black)",
-				darkgrey: "var(--darkgrey)",
-				grey: "var(--grey)",
-				softgrey: "var(--softgrey)",
-				lightgrey: "var(--lightgrey)",
-				smoke: "var(--smoke)",
 				sand: "var(--sand)",
-
-				// Hover //
-				primaryhover: "var(--primaryhover)",
+				lightgrey: "var(--lightgrey)",
+				softgrey: "var(--softgrey)",
+				grey: "var(--grey)",
+				darkgrey: "var(--darkgrey)",
+				bgbase: "var(--bgbase)",
 			},
 			padding: {
 				// :sm //
 				sectionpxsm: "var(--sectionpxsm)",
 				// :lg //
 				sectionpxlg: "var(--sectionpxlg)",
-			},
-			animation: {
-				marquee: "marquee 30s linear infinite",
-			},
-			keyframes: {
-				marquee: {
-					"0%": { transform: "translateX (0%)" },
-					"100%": { transform: "translateX(-100%)" },
-				},
 			},
 		},
 	},

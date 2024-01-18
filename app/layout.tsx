@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 
 import Providers from "./providers";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const mainfont = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Passionate",
@@ -17,10 +17,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
-			<body className={`bg-black ${outfit.className}`}>
-				<Providers>{children}</Providers>
-			</body>
+		<html lang="en" className={mainfont.className}>
+			<body className="bg-bgbase">{children}</body>
 		</html>
 	);
 }

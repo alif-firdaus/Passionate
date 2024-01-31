@@ -25,6 +25,12 @@ const config: Config = {
 				// :lg //
 				sectionpxlg: "var(--sectionpxlg)",
 			},
+			backgroundImage: {
+				fixitmockup: "url('../assets/images/fixitmockup.png')",
+				// Gradient //
+				primarygradient: "var(--primarygradient)",
+				textgradient: "var(--textgradient)",
+			},
 		},
 	},
 	plugins: [],

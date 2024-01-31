@@ -5,14 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Import HeroIcons //
-import {
-	Bars2Icon,
-	XMarkIcon,
-	ArrowRightIcon,
-} from "@heroicons/react/24/outline";
+import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 // Import Assets //
-import logo from "@/assets/images/logo.svg";
+import logo from "@/assets/images/logoold.svg";
+import logoo from "@/assets/images/logowhite.svg";
 
 function Navbar() {
 	// Navbar Links //
@@ -67,14 +64,14 @@ function Navbar() {
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
 			<nav className="fixed flex lg:hidden top-0 z-50 w-full px-sectionpxsm">
-				<div className="flex items-center w-full pr-3 pl-4 mt-6 justify-between py-3 bg-[#373737] bg-opacity-40 backdrop-blur-xl rounded-xl">
+				<div className="flex items-center w-full pr-3 pl-4 mt-6 justify-between py-[10px] bg-[#373737] bg-opacity-40 backdrop-blur-xl rounded-[10px]">
 					{/* Navbar Logo */}
 					<Link href="/">
 						<Image
-							src={logo}
+							src={logoo}
 							alt="Logo"
 							priority={true}
-							className="w-32"
+							className="w-28"
 						/>
 					</Link>
 
@@ -106,7 +103,7 @@ function Navbar() {
 						{navLinks.map((link, index) => (
 							<div
 								key={index}
-								className="w-full py-[14px] text-base font-extralight text-white"
+								className="w-full py-[14px] text-base font-light text-white"
 							>
 								<NavItem
 									key={index}
@@ -119,8 +116,8 @@ function Navbar() {
 
 					{/* Button */}
 					<Link href="/connect">
-						<div className="flex items-center mt-6 justify-center w-full pb-3 pt-[14px] font-medium bg-white rounded-md">
-							<p className="text-darkgrey text-center text-base font-normal pb-1">
+						<div className="flex items-center mt-6 justify-center w-full pt-3 pb-[14px] font-medium bg-white rounded-md">
+							<p className="text-darkgrey text-center text-base font-medium">
 								Connect
 							</p>
 						</div>
@@ -142,7 +139,7 @@ function Navbar() {
 						/>
 					</Link>
 
-					<div className="fixed inset-x-0 max-w-max mx-auto items-center justify-between gap-10 py-[22px] px-8 flex bg-[#373737] bg-opacity-40 rounded-[10px] backdrop-blur-2xl">
+					<div className="fixed inset-x-0 z-50 max-w-max mx-auto items-center justify-between gap-10 py-[22px] px-8 flex bg-[#373737] bg-opacity-40 rounded-[10px] backdrop-blur-2xl">
 						{navLinks.map((link, index) => (
 							<div
 								key={index}

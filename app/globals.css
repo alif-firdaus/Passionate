@@ -2,20 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	font-family: var(--mainfont);
+}
+
+h6 {
+	font-family: var(--indicator);
+}
+
 :root {
 	/* Color Palette */
 	--primary: #a3ec46;
-	--sand: #f5f1ee;
+	--sand: #fefce1;
 	--lightgrey: #b3b3b3;
-	--softgrey: #404040;
-	--grey: #3e3e3e;
+	--softgrey: #3e3e3e;
+	--grey: #2b2b2b;
 	--darkgrey: #272727;
 	--bgbase: #0a0a0a;
 
+	/* Gradient */
+	--primarygradient: linear-gradient(to right, #19e307, #abff85);
+	--textgradient: linear-gradient(to bottom right, #ffffff, #979797);
+
 	/* Padding X */
 	/* Padding X :sm */
-	--sectionpxsm: 24px;
+	--sectionpxsm: 22px;
 
 	/* Padding X :lg */
 	--sectionpxlg: 120px;
+}
+
+.btn::before {
+	transition: width 0.5s, height 0.5s;
 }

@@ -58,9 +58,9 @@ export default function Home() {
 					<span className="text-white">
 						not your typical Designer.
 					</span>{" "}
-					Think of me more like your Tech-savvy pal who's been
+					Think of me more like your Tech-savvy pal who&apos;s been
 					crafting pixels for over 3 years and a bit of coding mojo.
-					I'm all about turning your ideas and vision to life!
+					I&apos;m all about turning your ideas and vision to life!
 				</p>
 
 				{/* <-- === Connect Button Start === -->  */}
@@ -146,16 +146,18 @@ export default function Home() {
 			<section className="pt-40 pb-60 px-sectionpxsm lg:px-sectionpxlg">
 				<h2 className="text-[#828282] text-[28px] leading-tight font-light">
 					Ever seen a product and thought,{" "}
-					<span className="text-white">"Wow, that's slick!"?</span>{" "}
-					I'm the Picasso of pixels, turning your visions into eye
-					candy that{" "}
+					<span className="text-white">
+						&quot;Wow, that&apos;s slick!&quot;?
+					</span>{" "}
+					I&apos;m the Picasso of pixels, turning your visions into
+					eye candy that{" "}
 					<span className="text-white">
 						users will love to click around.
 					</span>{" "}
-					I'm also fluent in making websites come to life. Responsive,
-					snappy, and visually pleasing.{" "}
+					I&apos;m also fluent in making websites come to life.
+					Responsive, snappy, and visually pleasing.{" "}
 					<span className="text-white">
-						Let's make your product pop!
+						Let&apos;s make your product pop!
 					</span>
 				</h2>
 				{/* <-- === Portfolio Button Start === --> */}
@@ -188,8 +190,8 @@ export default function Home() {
 						My playground as Tech-savvy artist
 					</h1>
 					<p className="text-lightgrey text-[17px] mt-7 font-extralight lg:font-extralight lg:text-center lg:text-xl lg:mt-14 lg:px-64 lg:leading-relaxed">
-						Here are some snapshots of my the projects I've had the
-						pleasure of working on
+						Here are some snapshots of my the projects I&apos;ve had
+						the pleasure of working on
 					</p>
 				</div>
 			</section>
@@ -293,7 +295,7 @@ export default function Home() {
 					Showcase time
 				</h1>
 				<p className="text-lightgrey text-[17px] mt-7 font-extralight lg:font-extralight lg:text-center lg:text-xl lg:mt-14 lg:px-64 lg:leading-relaxed">
-					Here are some snapshots of my the projects I've had the
+					Here are some snapshots of my the projects I&apos;ve had the
 					pleasure of working on
 				</p>
 
@@ -393,8 +395,8 @@ export default function Home() {
 							</p>
 						</div>
 						<p className="text-lightgrey text-[15px] font-light mt-4">
-							With an eye for aesthetics, I'll turn your ideas
-							into visually enchanting and user-friendly
+							With an eye for aesthetics, I&apos;ll turn your
+							ideas into visually enchanting and user-friendly
 							interfaces.
 						</p>
 					</div>
@@ -446,7 +448,7 @@ export default function Home() {
 							</p>
 						</div>
 						<p className="text-lightgrey text-[15px] font-light mt-4">
-							I don't just make things pretty; I make them
+							I don&apos;t just make things pretty; I make them
 							intuitive. The ease of navigating digital product is
 							the key.
 						</p>
@@ -482,7 +484,7 @@ export default function Home() {
 				<div className="items-center justify-center relative flex mt-16">
 					<Link href="/connect">
 						<button className="bg-white w-fit px-12 pt-5 pb-6 rounded-full text-darkgrey font-medium text-xl">
-							Let's connect
+							Let&apos;s connect
 						</button>
 					</Link>
 				</div>

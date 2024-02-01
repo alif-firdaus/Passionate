@@ -7,9 +7,11 @@ import Image from "next/image";
 // Import HeroIcons //
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
+// Import Components //
+import MainButtonLg from "./main-button-lg";
+
 // Import Assets //
-import logo from "@/assets/images/logoold.svg";
-import logoo from "@/assets/images/logowhite.svg";
+import logo from "@/assets/images/logowhite.svg";
 
 function Navbar() {
 	// Navbar Links //
@@ -68,7 +70,7 @@ function Navbar() {
 					{/* Navbar Logo */}
 					<Link href="/">
 						<Image
-							src={logoo}
+							src={logo}
 							alt="Logo"
 							priority={true}
 							className="w-28"
@@ -127,7 +129,7 @@ function Navbar() {
 			{/* <-- ==== Navbar Mobile End ==== --> */}
 
 			{/* <-- ==== Navbar Desktop Start ==== --> */}
-			<nav className="hidden lg:flex w-full px-sectionpxlg">
+			<nav className="hidden lg:flex w-full px-sectionpxlg z-50 relative">
 				<div className="flex items-center w-full mt-[34px] justify-between">
 					{/* Navbar Title */}
 					<Link href="/">
@@ -135,15 +137,15 @@ function Navbar() {
 							src={logo}
 							alt="Logo"
 							priority={true}
-							className="w-[136px] cursor-pointer"
+							className="w-32 cursor-pointer"
 						/>
 					</Link>
 
-					<div className="fixed inset-x-0 z-50 max-w-max mx-auto items-center justify-between gap-10 py-[22px] px-8 flex bg-[#373737] bg-opacity-40 rounded-[10px] backdrop-blur-2xl">
+					<div className="fixed inset-x-0 z-50 max-w-max mx-auto items-center justify-between gap-10 py-[22px] px-10 flex bg-[#3d3d3d] bg-opacity-40 rounded-full backdrop-blur-2xl">
 						{navLinks.map((link, index) => (
 							<div
 								key={index}
-								className="text-[15px] text-white hover:text-primary duration-300 font-extralight"
+								className="text-[15px] text-lightgrey hover:text-white duration-300 font-light"
 							>
 								<NavItem
 									key={index}
@@ -155,11 +157,7 @@ function Navbar() {
 					</div>
 
 					<Link href="/connect">
-						<div className="group flex items-center py-3 px-9 hover:bg-white hover:border-none duration-300 font-medium border-[0.5px] border-grey rounded-lg w-fit">
-							<p className="text-[15px] font-light text-white group-hover:text-darkgrey duration-300 group-hover:font-normal">
-								Connect
-							</p>
-						</div>
+						<MainButtonLg text="Connect" />
 					</Link>
 				</div>
 			</nav>

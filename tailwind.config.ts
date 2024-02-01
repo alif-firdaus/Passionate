@@ -13,8 +13,8 @@ const config: Config = {
 				// Background //
 				primary: "var(--primary)",
 				sand: "var(--sand)",
-				lightgrey: "var(--lightgrey)",
 				softgrey: "var(--softgrey)",
+				lightgrey: "var(--lightgrey)",
 				grey: "var(--grey)",
 				darkgrey: "var(--darkgrey)",
 				bgbase: "var(--bgbase)",

@@ -14,22 +14,22 @@ h6 {
 	/* Color Palette */
 	--primary: #a3ec46;
 	--sand: #fefce1;
+	--softgrey: #d0d0d0;
 	--lightgrey: #b3b3b3;
-	--softgrey: #3e3e3e;
 	--grey: #2b2b2b;
 	--darkgrey: #272727;
 	--bgbase: #0a0a0a;
 
 	/* Gradient */
 	--primarygradient: linear-gradient(to right, #19e307, #abff85);
-	--textgradient: linear-gradient(to bottom right, #ffffff, #979797);
+	--textgradient: linear-gradient(to bottom right, #ffffff, #7e7e7e);
 
 	/* Padding X */
 	/* Padding X :sm */
 	--sectionpxsm: 22px;
 
 	/* Padding X :lg */
-	--sectionpxlg: 120px;
+	--sectionpxlg: 86px;
 }
 
 .btn::before {

@@ -11,7 +11,9 @@ const config: Config = {
 		extend: {
 			colors: {
 				// Background //
+				black: "var(--black)",
 				primary: "var(--primary)",
+				akarmula: "var(--akarmula)",
 				sand: "var(--sand)",
 				softgrey: "var(--softgrey)",
 				lightgrey: "var(--lightgrey)",

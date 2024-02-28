@@ -11,17 +11,14 @@ import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import MainButtonLg from "./main-button-lg";
 
 // Import Assets //
-import logo from "@/assets/images/logowhite.svg";
+import logo from "@/assets/images/logonew.png";
+import logotype from "@/assets/images/logotypenew.png";
 
 function Navbar() {
 	// Navbar Links //
 	const navLinks = [
 		{
-			text: "Home",
-			path: "/",
-		},
-		{
-			text: "Expertise",
+			text: "About",
 			path: "/expertise",
 		},
 		{
@@ -31,6 +28,10 @@ function Navbar() {
 		{
 			text: "Portfolio",
 			path: "https://dribbble.com/aliffirdaus",
+		},
+		{
+			text: "Connect",
+			path: "/connect",
 		},
 	];
 
@@ -65,15 +66,15 @@ function Navbar() {
 	return (
 		<>
 			{/* <-- ==== Navbar Mobile Start ==== --> */}
-			<nav className="fixed flex lg:hidden top-0 z-50 w-full px-sectionpxsm">
-				<div className="flex items-center w-full pr-3 pl-4 mt-6 justify-between py-[10px] bg-[#373737] bg-opacity-40 backdrop-blur-xl rounded-[10px]">
+			<nav className="fixed flex lg:hidden bottom-[26px] z-50 w-full px-sectionpxsm">
+				<div className="flex items-center w-full pr-3 pl-5 justify-between py-4 bg-[#323232] bg-opacity-40 backdrop-blur-xl rounded-[10px]">
 					{/* Navbar Logo */}
 					<Link href="/">
 						<Image
 							src={logo}
 							alt="Logo"
 							priority={true}
-							className="w-28"
+							className="w-7"
 						/>
 					</Link>
 
@@ -83,29 +84,29 @@ function Navbar() {
 						className="flex lg:hidden justify-center w-9 h-9 items-center cursor-pointer"
 					>
 						{isOpen ? (
-							<XMarkIcon className="w-[26px] stroke-[1px] text-white" />
+							<XMarkIcon className="w-[26px] stroke-[1px] text-akarmula" />
 						) : (
-							<Bars2Icon className="w-7 stroke-[1px] text-white" />
+							<Bars2Icon className="w-7 stroke-[1px] text-akarmula" />
 						)}
 					</div>
 				</div>
 			</nav>
 
 			<div
-				className={`fixed px-sectionpxsm w-full z-50
+				className={`fixed w-full px-sectionpxsm z-40
             ${
 				isOpen
-					? "top-[108px] left-0 transition-all duration-700 ease-in-out"
-					: "-top-full left-0 transition-all duration-700 ease-in-out"
+					? "bottom-[110px] left-0 transition-all duration-700 ease-in-out"
+					: "-bottom-full left-0 transition-all duration-700 ease-in-out"
 			}`}
 			>
-				<div className="w-full flex-col h-full bg-[#373737] bg-opacity-40 backdrop-blur-xl px-5 pt-[10px] justify-between pb-5 z-50 rounded-xl">
-					<div className="flex flex-col justify-between">
+				<div className="w-full flex flex-col h-full bg-[#323232] bg-opacity-40 px-5 backdrop-blur-xl py-4 justify-center items-center rounded-[10px]">
+					<div className="flex flex-col w-full">
 						{/* Navbar Links */}
 						{navLinks.map((link, index) => (
 							<div
 								key={index}
-								className="w-full py-[14px] text-base font-light text-white"
+								className="w-full py-2 text-2xl text-akarmula font-light"
 							>
 								<NavItem
 									key={index}
@@ -115,15 +116,6 @@ function Navbar() {
 							</div>
 						))}
 					</div>
-
-					{/* Button */}
-					<Link href="/connect">
-						<div className="flex items-center mt-6 justify-center w-full pt-3 pb-[14px] font-medium bg-white rounded-md">
-							<p className="text-darkgrey text-center text-base font-medium">
-								Connect
-							</p>
-						</div>
-					</Link>
 				</div>
 			</div>
 			{/* <-- ==== Navbar Mobile End ==== --> */}

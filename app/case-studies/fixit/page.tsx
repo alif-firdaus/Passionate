@@ -9,8 +9,8 @@ import logo from "@/assets/fixit/fixitlogo.webp";
 import mockup from "@/assets/fixit/appmockup.webp";
 import navigation from "@/assets/fixit/navbar.webp";
 import homepage from "@/assets/fixit/home.webp";
-import jobposting1 from "@/assets/fixit/jobposting1.webp";
-import jobposting2 from "@/assets/fixit/jobposting2.webp";
+// import jobposting1 from "@/assets/fixit/jobposting1.webp";
+// import jobposting2 from "@/assets/fixit/jobposting2.webp";
 import contract1 from "@/assets/fixit/contract1.webp";
 import contract2 from "@/assets/fixit/contract2.webp";
 import payment1 from "@/assets/fixit/payment1.webp";
@@ -135,7 +135,7 @@ const Fixit = () => {
 			{/* <-- ==== Job Posting Section Start ==== --> */}
 			<section className="flex flex-col pt-24 pb-10 lg:pt-48 px-sectionpxsm lg:flex-row lg:px-sectionpxlg lg:items-center lg:gap-24 lg:justify-center">
 				<div className="flex w-full px-10 lg:px-0 flex-col gap-14 lg:gap-8 lg:flex-row">
-					<div className="w-full">
+					{/* <div className="w-full">
 						<Image
 							src={jobposting1}
 							alt="Job Posting"
@@ -150,7 +150,7 @@ const Fixit = () => {
 							priority={true}
 							className="w-full h-auto"
 						/>
-					</div>
+					</div> */}
 				</div>
 				<div className="w-full flex flex-col mt-16 lg:mt-0">
 					<p className="text-xs text-lightgrey tracking-wide">

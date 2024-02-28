@@ -3,6 +3,8 @@ import Image from "next/image";
 
 // Import Components //
 import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
+import MarqueeExpertise from "@/components/marquee-expertise";
 import Footer from "@/components/Footer";
 import MainButton from "@/components/main-button";
 import MainButtonLg from "@/components/main-button-lg";
@@ -27,6 +29,9 @@ import {
 } from "@radix-ui/react-icons";
 
 // Import Assets //
+import hustler from "@/assets/images/hustler.webp";
+import hispter from "@/assets/images/hipster.webp";
+import hacker from "@/assets/images/hacker.webp";
 import Bg1 from "@/assets/images/bg1.svg";
 import Bg2 from "@/assets/images/bg2.svg";
 import Bg3 from "@/assets/images/bg3.svg";
@@ -42,364 +47,235 @@ export default function Home() {
 			<Navbar />
 			{/* <-- ==== Navbar End ==== --> */}
 
-			{/* <-- ==== Background Start ==== --> */}
-			<Image
-				src={Bg1}
-				alt="Background"
-				priority={true}
-				className="absolute top-52 block w-screen opacity-80 lg:hidden"
-			/>
-			<Image
-				src={Bg1lg}
-				alt="Background"
-				priority={true}
-				className="absolute top-52 lg:block w-screen opacity-70 hidden"
-			/>
-			{/* <-- ==== Background End ==== --> */}
+			{/* <-- ==== Header Start ==== --> */}
+			<Header />
+			{/* <-- ==== Header End ==== --> */}
 
 			{/* <-- ==== Hero Section Start ==== --> */}
-			<section className="flex relative flex-col px-sectionpxsm lg:px-sectionpxlg pt-44 lg:pt-40">
-				<h6 className="text-lightgrey text-xs lg:text-[10px] tracking-wide lg:tracking-widest pl-[2px] lg:pl-1">
-					AVAILABLE FOR WORK
+			<section className="block pt-[146px] justify-center items-center px-sectionpxsm lg:px-sectionpxlg">
+				{/* <h6 className="text-akarmula text-[40px] text-center leading-none">
+					STAND OUT
+					<br />
+					<span className="text-transparent bg-clip-text bg-primarygradient">
+						AS YOUR GO-TO
+					</span>
+					<br />
+					PIXEL CRAFTER
+				</h6> */}
+				<h6 className="text-akarmula text-6xl leading-none">
+					STAND OUT{" "}
+					<span className="text-transparent bg-clip-text bg-primarygradient">
+						AS YOUR GO-TO
+					</span>{" "}
+					PIXEL CRAFTER
 				</h6>
-
-				<h1 className="block lg:hidden text-transparent text-[44px] mt-7 leading-none bg-clip-text bg-textgradient">
-					Delivering results that go beyond expectations
-				</h1>
-				<h1 className="hidden lg:block text-transparent text-[74px] font-medium mt-9 leading-[1.1] bg-clip-text bg-textgradient">
-					Delivering results <br />
-					that go beyond expectations
-				</h1>
-
-				<p className="block lg:hidden text-lightgrey text-[17px] mt-7 font-extralight">
-					I am Alif Firdaus -{" "}
-					<span className="text-white">
-						not your typical Designer.
-					</span>{" "}
-					Think of me more like your Tech-savvy pal who&apos;s been
-					crafting pixels for over 3 years and a bit of coding mojo.
-					I&apos;m all about turning your ideas and vision to life!
-				</p>
-				<p className="hidden lg:block text-lightgrey text-lg font-extralight mt-10 leading-relaxed">
-					I am Alif Firdaus -{" "}
-					<span className="text-white">
-						not your typical Designer.
-					</span>{" "}
-					Think of me more like <br />
-					your Tech-savvy pal who&apos;s been crafting pixels for over
-					3 years and a bit of <br />
-					coding mojo. I&apos;m all about turning your ideas and
-					vision to life!
-				</p>
-
-				{/* <-- === Connect Button Start === -->  */}
-				<div className="flex lg:hidden items-center mt-14">
-					<Link href="/connect">
-						<MainButton text="Let's talk" />
-					</Link>
-				</div>
-				<div className="hidden lg:flex items-center mt-16">
-					<Link href="/connect">
-						<MainButtonLg text="Let's talk" />
-					</Link>
-				</div>
-				{/* <-- === Connect Button End === --> */}
 			</section>
 			{/* <-- ==== Hero Section End ==== --> */}
 
-			{/* <-- ==== Marquee A Section Start ==== --> */}
-			<section className="mt-36 lg:hidden flex relative">
-				<MarqueeEffectA />
-			</section>
-			{/* <-- ==== Marquee A Section End ==== --> */}
-
-			{/* <-- ==== Marquee A Section LG Start ==== --> */}
-			<section className="mt-44 hidden lg:flex px-sectionpxlg relative">
-				<div className="flex w-full py-6 gap-9 justify-between items-center">
-					<div className="flex justify-center items-center gap-6">
-						<div className="flex items-center justify-center w-[38px] h-[38px] bg-neutral-500 bg-opacity-25 rounded-md">
-							<FrameIcon className="w-[14px] h-[14px] text-white" />
-						</div>
-						<p className="text-lightgrey text-[15px] font-light">
-							Idea transformer
-						</p>
-					</div>
-					<div className="flex justify-center items-center gap-6">
-						<div className="flex items-center justify-center w-[38px] h-[38px] bg-neutral-500 bg-opacity-25 rounded-md">
-							<CursorArrowIcon className="w-[14px] h-[14px] text-white" />
-						</div>
-						<p className="text-lightgrey text-[15px] font-light">
-							Collaborative
-						</p>
-					</div>
-					<div className="flex justify-center items-center gap-6">
-						<div className="flex items-center justify-center w-[38px] h-[38px] bg-neutral-500 bg-opacity-25 rounded-md">
-							<CubeIcon className="w-[14px] h-[14px] text-white" />
-						</div>
-						<p className="text-lightgrey text-[15px] font-light">
-							Results junkie
-						</p>
-					</div>
-					<div className="flex justify-center items-center gap-6">
-						<div className="flex items-center justify-center w-[38px] h-[38px] bg-neutral-500 bg-opacity-25 rounded-md">
-							<CodeIcon className="w-4 h-4 text-white" />
-						</div>
-						<p className="text-lightgrey text-[15px] font-light">
-							Code whisperer
-						</p>
-					</div>
-				</div>
-			</section>
-			{/* <-- ==== Marquee A Section LG End ==== --> */}
-
-			{/* <-- ==== Divider Start ==== --> */}
-			<div className="mt-4 lg:mt-7 relative">
-				<Divider />
-			</div>
-			{/* <-- ==== Divider End ==== --> */}
-
 			{/* <-- ==== About Section Start ==== --> */}
-			<section className="px-sectionpxsm pt-40 lg:px-sectionpxlg lg:pt-56">
-				<h6 className="text-lightgrey text-xs lg:text-[10px] tracking-wide lg:text-center lg:tracking-widest pl-[2px] lg:pl-1">
-					GET TO KNOW ABOUT ME
-				</h6>
-
-				<h1 className="block lg:hidden text-transparent text-[44px] mt-7 leading-none bg-clip-text bg-textgradient">
-					Elevating products into perfection
-				</h1>
-				<h1 className="hidden lg:block text-transparent lg:text-center text-[74px] font-medium mt-9 leading-[1.1] bg-clip-text bg-textgradient">
-					Elevating products <br />
-					into perfection
-				</h1>
-				<p className="text-lightgrey text-[17px] mt-7 font-extralight lg:text-center lg:text-lg lg:mt-10 lg:px-60 lg:leading-relaxed">
-					I specialize in creating visually stunning and intuitive
-					user interfaces that not only look good{" "}
-					<span className="text-white">
-						but also enhance the user experience.
-					</span>{" "}
-					From wireframes to prototypes, I love transforming ideas.
-					into engaging digital solutions. My coding skills add an
-					extra layer of understanding to my design process,{" "}
-					<span className="text-white">
-						allowing for smoother collaboration with developers.
+			<section className="px-sectionpxsm flex flex-col pt-72 lg:px-sectionpxlg lg:pt-56">
+				<h3 className="text-[32px] text-akarmula leading-none font-medium">
+					My expertise.
+					<br />
+					Your ideas and vision.
+					<br />
+					<span className="text-transparent bg-clip-text bg-primarygradient">
+						Endless possibilities.
 					</span>
+				</h3>
+			</section>
+
+			<section className="w-full mt-16 h-auto">
+				<video
+					loop={true}
+					autoPlay={true}
+					muted={true}
+					controls={false}
+					playsInline
+				>
+					<source src="./cube.mp4" type="video/mp4" />
+				</video>
+			</section>
+
+			<section className="flex px-sectionpxsm flex-col mt-16">
+				<p className="text-lg text-grey">
+					<span className="text-akarmula">
+						With a passion for pushing boundaries
+					</span>{" "}
+					and turning idea into captivating digital products. Your
+					idea is my muse, and together, we&apos;ll create something
+					bold and outstanding that resonates deeply with you and your
+					audience.
 				</p>
-				<div className="flex items-center justify-center">
-					<div className="w-full bg-white lg:w-fit flex justify-center items-center flex-col lg:flex-row lg:pl-5 lg:pr-9 lg:gap-24 rounded-3xl lg:rounded-full py-7 lg:py-5 mt-16">
-						<div className="flex flex-col lg:flex-row justify-center lg:gap-7 items-center">
-							<Image
-								src={Avatar}
-								alt="Avatar"
-								priority={true}
-								className="w-28 lg:w-[84px]"
-							/>
-							<div className="mt-6 lg:mt-0 flex-col items-center justify-center">
-								<h2 className="text-darkgrey text-xl text-center lg:text-left">
-									Alif Firdaus
-								</h2>
-								<p className="text-center lg:text-left text-base text-[#a1a1a1] mt-1 font-light">
-									A Product Designer who can code
-								</p>
-							</div>
-						</div>
-						<div className="flex lg:hidden mt-9 items-center justify-center">
-							<SecondaryButton text="Case studies" />
-						</div>
-						<div className="lg:flex hidden items-center justify-center">
-							<SecondaryButtonLg text="Case studies" />
-						</div>
-					</div>
+				<div className="flex flex-col mt-12 gap-6">
+					<MainButton text="Schedule a Call" />
+					<SecondaryButton text="Download my Resume" />
 				</div>
-			</section>
-			{/* <-- ==== About Section End ==== --> */}
-
-			{/* <-- ==== Marquee A Section Start ==== --> */}
-			<section className="mt-40 lg:mt-64">
-				<MarqueeEffectB />
-			</section>
-			{/* <-- ==== Marquee A Section End ==== --> */}
-
-			{/* <-- ==== Divider Start ==== --> */}
-			<div className="mt-5">
-				<Divider />
-			</div>
-			{/* <-- ==== Divider End ==== --> */}
-
-			{/* <-- ==== About Section Start ==== --> */}
-			<section className="relative pt-40 lg:pt-52 pb-60 lg:pb-96 px-sectionpxsm lg:px-sectionpxlg">
-				<Image
-					src={Bg3}
-					alt="Background"
-					priority={true}
-					className="absolute lg:block hidden top-[480px] inset-0 w-screen opacity-50"
-				/>
-				<h2 className="relative text-[#828282] text-[28px] lg:text-[42px] leading-tight font-light">
-					Ever seen a product and thought,{" "}
-					<span className="text-white">
-						&quot;Wow, that&apos;s slick!&quot;?
-					</span>{" "}
-					I&apos;m the Picasso of pixels, turning your visions into
-					eye candy that{" "}
-					<span className="text-white">
-						users will love to click around.
-					</span>{" "}
-					I&apos;m also fluent in making websites come to life.
-					Responsive, snappy, and visually pleasing.{" "}
-					<span className="text-white">
-						Let&apos;s make your product pop!
-					</span>
-				</h2>
-				{/* <-- === Portfolio Button Start === --> */}
-				<div className="relative flex lg:hidden items-center mt-16">
-					<Link
-						href="https://dribbble.com/aliffirdaus"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<MainButton text="Works quality" />
-					</Link>
-				</div>
-
-				<div className="relative lg:flex hidden items-center mt-20">
-					<Link
-						href="https://dribbble.com/aliffirdaus"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<MainButtonLg text="Works quality" />
-					</Link>
-				</div>
-				{/* <-- === Portfolio Button End === --> */}
 			</section>
 			{/* <-- ==== About Section End ==== --> */}
 
 			{/* <-- ==== Expertise Section Start ==== --> */}
-			<section className="relative px-sectionpxsm lg:px-sectionpxlg">
-				<Image
-					src={Bg2}
-					alt="Background"
-					priority={true}
-					className="absolute top-10 opacity-80 block inset-0 w-screen lg:hidden"
-				/>
-				<div className="relative">
-					<h6 className="text-lightgrey text-xs lg:text-[10px] tracking-wide lg:tracking-widest pl-[2px] lg:pl-1">
-						MY EXPERTISE
-					</h6>
-
-					<h1 className="block lg:hidden text-transparent text-[44px] mt-7 leading-none bg-clip-text bg-textgradient">
-						My playground as a Tech-savvy artist
-					</h1>
-					<h1 className="hidden lg:block text-transparent text-[74px] font-medium mt-9 leading-[1.1] bg-clip-text bg-textgradient">
-						My playground as
-						<br />a Tech-savvy artist
-					</h1>
-
-					<p className="text-lightgrey text-[17px] mt-7 font-extralight lg:text-lg lg:mt-10">
-						Here are some snapshots of my the projects I&apos;ve had
-						the pleasure of working on
-					</p>
-				</div>
-			</section>
-			<section className="relative px-sectionpxsm lg:px-sectionpxlg mt-14 lg:mt-24">
-				<Image
-					src={Bg3}
-					alt="Background"
-					priority={true}
-					className="absolute top-96 opacity-80 block inset-0 w-screen lg:hidden"
-				/>
-				<div className="relative grid grid-cols-1 w-full gap-6 lg:grid-cols-3">
-					<div className="flex flex-col px-7 py-7 lg:px-8 lg:py-8 max-h-fit min-h-[22rem] lg:min-h-[25rem] gap-12 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl">
-						<div className="flex items-start justify-start w-full">
-							<div className="bg-white bg-opacity-10 rounded-lg py-[22px] px-[22px]">
-								<CubeIcon className="text-white w-7 h-7" />
+			<section className="flex flex-col pt-[76px] mt-52 lg:pt-52 pb-48 lg:pb-96 bg-[#FDFDFB]">
+				<MarqueeExpertise />
+				<div className="w-full flex gap-6 flex-col px-sectionpxsm mt-20">
+					{/* <-- === Hustler Start === --> */}
+					<div className="bg-bgbase flex flex-col px-8 py-8 rounded-3xl h-auto">
+						<div className="flex flex-col">
+							<p className="text-base text-akarmula font-light">
+								Hustler
+							</p>
+							<div className="flex flex-col mt-20">
+								<h3 className="text-akarmula text-3xl">
+									Strategy
+								</h3>
+								<p className="text-base mt-4 font-extralight text-grey leading-snug">
+									Your satisfaction is highly valuable, good
+									is not enough,{" "}
+									<span className="text-akarmula">
+										surpassing your expectations is my true
+										objective.
+									</span>
+								</p>
+								<div className="w-auto h-auto flex-wrap flex gap-3 mt-9">
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										Brand Strategy
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										Sitemap
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										User-flow
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										User Persona
+									</div>
+								</div>
+								<div className="w-full mt-12 h-full flex justify-center items-center bg-[#1e1e1e] rounded-2xl py-6 px-4">
+									<Image
+										src={hustler}
+										alt="Hustler Illustration"
+										priority={true}
+										className="w-56 h-56"
+									/>
+								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-full justify-end h-full">
-							<h4 className="text-white text-2xl font-medium lg:font-normal">
-								UI/UX Design
-							</h4>
-							<p className="text-lightgrey mt-4 text-[17px] font-extralight">
-								From wireframe to prototype for Website and
-								Mobile App, I am able to deliver high-quality
-								results.
-							</p>
-						</div>
 					</div>
+					{/* <-- === Hustler End === --> */}
 
-					<div className="flex flex-col px-7 py-7 lg:px-8 lg:py-8 max-h-fit min-h-[22rem] lg:min-h-[25rem] gap-12 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl">
-						<div className="flex items-start justify-start w-full">
-							<div className="bg-white bg-opacity-10 rounded-lg py-[22px] px-[22px]">
-								<CubeIcon className="text-white w-7 h-7" />
+					{/* <-- === Hipster Start === --> */}
+					<div className="bg-[#F1F1F1] flex flex-col px-8 py-8 rounded-3xl h-auto">
+						<div className="flex flex-col">
+							<p className="text-base text-black font-normal">
+								Hipster
+							</p>
+							<div className="flex flex-col mt-20">
+								<h3 className="text-black font-medium text-3xl">
+									Creative
+								</h3>
+								<p className="text-base mt-4 font-light text-black leading-snug">
+									Your satisfaction is highly valuable, good
+									is not enough, surpassing your expectations
+									is my true objective.
+								</p>
+								<div className="w-auto h-auto flex-wrap flex gap-3 mt-9">
+									<div className="w-fit text-base text-black font-medium h-fit px-4 py-2 bg-[#E5E5E5] rounded-md flex items-center justify-center">
+										UI/UX Design
+									</div>
+									<div className="w-fit text-base text-black font-medium h-fit px-4 py-2 bg-[#E5E5E5] rounded-md flex items-center justify-center">
+										Design Systems
+									</div>
+									<div className="w-fit text-base text-black font-medium h-fit px-4 py-2 bg-[#E5E5E5] rounded-md flex items-center justify-center">
+										Brand Guidelines
+									</div>
+									<div className="w-fit text-base text-black font-medium h-fit px-4 py-2 bg-[#E5E5E5] rounded-md flex items-center justify-center">
+										Wireframe
+									</div>
+									<div className="w-fit text-base text-black font-medium h-fit px-4 py-2 bg-[#E5E5E5] rounded-md flex items-center justify-center">
+										Framer Development
+									</div>
+									<div className="w-fit text-base text-black font-medium h-fit px-4 py-2 bg-[#E5E5E5] rounded-md flex items-center justify-center">
+										Webflow Development
+									</div>
+								</div>
+								<div className="w-full mt-12 h-full flex justify-center items-center bg-[#E5E5E5] rounded-2xl py-6 px-4">
+									<Image
+										src={hispter}
+										alt="Hipster Illustration"
+										priority={true}
+										className="w-56 h-56"
+									/>
+								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-full justify-end h-full">
-							<h4 className="text-white text-2xl font-medium lg:font-normal">
-								Project Planning
-							</h4>
-							<p className="text-lightgrey mt-4 text-[17px] font-extralight">
-								From creating sitemap, user-flow, and wireframe
-								- I am the architect of design and project
-								preparations.
-							</p>
-						</div>
 					</div>
+					{/* <-- === Hipster End === --> */}
 
-					<div className="flex flex-col px-7 py-7 lg:px-8 lg:py-8 max-h-fit min-h-[22rem] lg:min-h-[25rem] gap-12 bg-white bg-opacity-10 backdrop-blur-xl rounded-xl">
-						<div className="flex items-start justify-start w-full">
-							<div className="bg-white bg-opacity-10 rounded-lg py-[22px] px-[22px]">
-								<CubeIcon className="text-white w-7 h-7" />
+					{/* <-- === Hacker Start === --> */}
+					<div className="bg-bgbase flex flex-col px-8 py-8 rounded-3xl h-auto">
+						<div className="flex flex-col">
+							<p className="text-base text-akarmula font-light">
+								Hacker
+							</p>
+							<div className="flex flex-col mt-20">
+								<h3 className="text-akarmula text-3xl">
+									Development
+								</h3>
+								<p className="text-base mt-4 font-extralight text-grey leading-snug">
+									Your satisfaction is highly valuable, good
+									is not enough,{" "}
+									<span className="text-akarmula">
+										surpassing your expectations is my true
+										objective.
+									</span>
+								</p>
+								<div className="w-auto h-auto flex-wrap flex gap-3 mt-9">
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										HTML5
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										CSS3
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										React Js
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										Next Js
+									</div>
+									<div className="w-fit text-base text-akarmula font-light h-fit px-4 py-2 bg-[#1e1e1e] rounded-md flex items-center justify-center">
+										TailwindCSS
+									</div>
+								</div>
+								<div className="w-full mt-12 h-full flex justify-center items-center bg-[#1e1e1e] rounded-2xl py-6 px-4">
+									<Image
+										src={hacker}
+										alt="Hacker Illustration"
+										priority={true}
+										className="w-56 h-56"
+									/>
+								</div>
 							</div>
 						</div>
-						<div className="flex flex-col w-full justify-end h-full">
-							<h4 className="text-white text-2xl font-medium lg:font-normal">
-								Front-end Dev
-							</h4>
-							<p className="text-lightgrey mt-4 text-[17px] font-extralight">
-								Translating designs into living web magic. I
-								take the pretty pixels and make them dance on
-								the screen.
-							</p>
-						</div>
 					</div>
-				</div>
-
-				<div className="flex flex-col lg:flex-row lg:justify-center lg:items-center px-7 py-7 lg:px-8 lg:py-8 bg-white bg-opacity-10 backdrop-blur-xl mt-7 gap-16 lg:gap-0 rounded-xl">
-					<div className="flex items-start justify-start w-full">
-						<h4 className="text-white text-3xl lg:text-2xl">
-							Ready to create cool stuffs?
-						</h4>
-					</div>
-					<div className="flex items-end w-full justify-start lg:hidden h-full">
-						<Link
-							href="/aliffirdaus-resume.pdf"
-							target="_blank"
-							rel="noopener noreferrer"
-							download="ALIF FIRDAUS - RESUME"
-						>
-							<button className="w-fit flex justify-center items-center bg-white rounded-full text-base text-darkgrey font-medium px-8 pt-3 pb-[14px]">
-								Download Resume
-							</button>
-						</Link>
-					</div>
-					<div className="lg:flex items-end w-full justify-end hidden h-full">
-						<Link
-							href="/aliffirdaus-resume.pdf"
-							target="_blank"
-							rel="noopener noreferrer"
-							download="ALIF FIRDAUS - RESUME"
-						>
-							<MainButtonLg text="Download Resume" />
-						</Link>
-					</div>
+					{/* <-- === Hacker End === --> */}
 				</div>
 			</section>
 			{/* <-- ==== Expertise Section End ==== --> */}
 
-			{/* <-- ==== Divider Start ==== --> */}
-			<div className="mt-40 relative block lg:hidden">
-				<Divider />
-			</div>
-			{/* <-- ==== Divider End ==== --> */}
+			{/* <-- ==== Bento Grid Section Start ==== --> */}
+			{/* <-- ==== Bento Grid Section End ==== --> */}
+
+			{/* <-- ==== Quote Section Start ==== --> */}
+			<section className="w-full px-sectionpxsm py-44 flex justify-center items-center">
+				<h6 className="text-7xl text-center text-akarmula leading-none">
+					LESS IS
+					<br />
+					<span className="text-transparent bg-clip-text bg-primarygradient">
+						MOOORE
+					</span>
+				</h6>
+			</section>
+			{/* <-- ==== Quote Section End ==== --> */}
 
 			{/* <-- ==== Portfolio Section Start ==== --> */}
 			<section className="relative pt-40 lg:pt-[450px] px-sectionpxsm lg:px-sectionpxlg">

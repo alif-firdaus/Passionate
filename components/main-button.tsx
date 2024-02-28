@@ -4,8 +4,8 @@ interface MainButtonProps {
 
 const MainButton = ({ text }: MainButtonProps) => {
 	return (
-		<button className="flex items-center justify-center bg-white pt-3 pb-[14px] rounded-full w-fit px-11">
-			<p className="text-lg text-darkgrey font-medium">{text}</p>
+		<button className="flex items-center justify-center bg-akarmula pt-3 pb-[14px] rounded-md w-full">
+			<p className="text-lg text-black font-medium">{text}</p>
 		</button>
 	);
 };

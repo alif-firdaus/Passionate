@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Glegoo } from "next/font/google";
+import { Poppins, Nunito_Sans } from "next/font/google";
 import "./globals.css";
 
-const mainfont = Bricolage_Grotesque({
+const mainfont = Nunito_Sans({
 	subsets: ["latin"],
 	variable: "--mainfont",
 	display: "swap",
 });
 
-const indicator = Glegoo({
-	weight: "400",
+const head = Poppins({
+	weight: "500",
 	subsets: ["latin"],
-	variable: "--indicator",
+	variable: "--head",
 });
 
 export const metadata: Metadata = {
@@ -25,11 +25,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html
-			lang="en"
-			className={`${mainfont.variable} ${indicator.variable}`}
-		>
-			<body className="bg-black">{children}</body>
+		<html lang="en" className={`${mainfont.variable} ${head.variable}`}>
+			<body className="bg-bgbase">{children}</body>
 		</html>
 	);
 }
